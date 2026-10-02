@@ -1,0 +1,3 @@
+Handshake passed; both parties derived matching keys.
+Four distinct 32-byte keys; 8-byte session ID: e9c87870e363c215
+Second session passed with a new session ID: aec6ad4fbde4cf8f
