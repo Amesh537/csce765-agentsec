@@ -1,0 +1,16 @@
+Assigned plaintext: {"action":"READ","path":"notes.txt"}
+IV: 21c869e8c58a02a6fa2e92792aa26494
+Original ciphertext: 97ad37b81cb7b79982c3b2821961375536b30a4a2fd7e38e9aee2b69bf99d46e815fb6b5
+Modified ciphertext: 97ad37b81cb7b79982c3b29e136f235536b30a4a2fd7e38e9aee2b69bf99d46e815fb6b5
+
+Bit-flip demonstration (no key supplied to relay)
+Action byte offset: 11
+READ XOR NOOP: 52454144 XOR 4e4f4f50 = 1c0a0e14
+C XOR mask = C': 82196137 XOR 1c0a0e14 = 9e136f23
+P' = (C XOR mask) XOR keystream = P XOR mask
+Processed #1: {"action":"NOOP","path":"notes.txt"}
+
+Replay demonstration (identical IV and original ciphertext sent twice)
+Processed #1: {"action":"READ","path":"notes.txt"}
+Processed #2: {"action":"READ","path":"notes.txt"}
+Receiver processed the same record 2 times.
