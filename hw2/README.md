@@ -59,6 +59,12 @@ To run only the handshake tests:
 python -m pytest -v tests/test_handshake.py
 ```
 
+To run only the record-layer tests:
+
+```bash
+python -m pytest -v tests/test_secure_record.py
+```
+
 To run one test function (including its parameterized cases):
 
 ```bash
