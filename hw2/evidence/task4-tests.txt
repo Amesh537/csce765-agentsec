@@ -2,10 +2,31 @@
 platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /home/ubuntu/csce765-agentsec/hw2/.venv/bin/python
 cachedir: .pytest_cache
 rootdir: /home/ubuntu/csce765-agentsec/hw2
-collecting ... collected 3 items
+collecting ... collected 24 items
 
-tests/test_handshake.py::test_valid_handshake PASSED                     [ 33%]
-tests/test_handshake.py::test_fresh_sessions PASSED                      [ 66%]
-tests/test_handshake.py::test_transcript_encoding PASSED                 [100%]
+tests/test_handshake.py::test_valid_handshake PASSED                     [  4%]
+tests/test_handshake.py::test_fresh_sessions PASSED                      [  8%]
+tests/test_handshake.py::test_transcript_encoding PASSED                 [ 12%]
+tests/test_handshake.py::test_key_derivation PASSED                      [ 16%]
+tests/test_handshake.py::test_malformed_transcript PASSED                [ 20%]
+tests/test_handshake.py::test_handshake_rejection[identity-gateway_hello-identity] PASSED [ 25%]
+tests/test_handshake.py::test_handshake_rejection[nonce-gateway_hello-transcript mismatch] PASSED [ 29%]
+tests/test_handshake.py::test_handshake_rejection[public_value-node_hello-transcript mismatch] PASSED [ 33%]
+tests/test_handshake.py::test_handshake_rejection[zero_public-gateway_hello-DH public value] PASSED [ 37%]
+tests/test_handshake.py::test_handshake_rejection[one_public-node_hello-DH public value] PASSED [ 41%]
+tests/test_handshake.py::test_handshake_rejection[signature-gateway_auth-signature] PASSED [ 45%]
+tests/test_handshake.py::test_handshake_rejection[short_signature-node_auth-signature] PASSED [ 50%]
+tests/test_handshake.py::test_handshake_rejection[wrong_key-node_auth-signature] PASSED [ 54%]
+tests/test_handshake.py::test_handshake_rejection[reflected_hello-node_hello-identity] PASSED [ 58%]
+tests/test_handshake.py::test_handshake_rejection[reflected_auth-node_auth-signature] PASSED [ 62%]
+tests/test_handshake.py::test_handshake_rejection[role_binding-node_auth-signature] PASSED [ 66%]
+tests/test_handshake.py::test_handshake_rejection[old_auth-gateway_auth-transcript mismatch] PASSED [ 70%]
+tests/test_handshake.py::test_handshake_rejection[old_hello-gateway_hello-transcript mismatch] PASSED [ 75%]
+tests/test_handshake.py::test_handshake_rejection[malformed-gateway_auth-transcript length] PASSED [ 79%]
+tests/test_handshake.py::test_handshake_state[premature_finish] PASSED   [ 83%]
+tests/test_handshake.py::test_handshake_state[duplicate_hello] PASSED    [ 87%]
+tests/test_handshake.py::test_handshake_state[duplicate_auth] PASSED     [ 91%]
+tests/test_handshake.py::test_handshake_state[duplicate_finish] PASSED   [ 95%]
+tests/test_handshake.py::test_handshake_state[early_signature] PASSED    [100%]
 
-============================== 3 passed in 0.76s ===============================
+============================== 24 passed in 1.24s ==============================

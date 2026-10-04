@@ -53,20 +53,14 @@ From `hw2/`, with the virtual environment active:
 python -m pytest -v tests/
 ```
 
-To run only the valid-handshake test:
+To run only the handshake tests:
 
 ```bash
-python -m pytest -v tests/test_handshake.py::test_valid_handshake
+python -m pytest -v tests/test_handshake.py
 ```
 
-To run only the fresh-session test:
+To run one test function (including its parameterized cases):
 
 ```bash
-python -m pytest -v tests/test_handshake.py::test_fresh_sessions
-```
-
-To run only the transcript-encoding test:
-
-```bash
-python -m pytest -v tests/test_handshake.py::test_transcript_encoding
+python -m pytest -v tests/test_handshake.py::test_handshake_rejection
 ```
