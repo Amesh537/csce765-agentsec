@@ -1,0 +1,4 @@
+gateway -> node, sequence 0: {"action":"READ","path":"notes.txt"}
+node -> gateway, sequence 0: OK
+gateway -> node, sequence 1: {"action":"READ","path":"notes.txt"}
+Bidirectional messages and sequence checks passed.

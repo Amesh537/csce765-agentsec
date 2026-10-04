@@ -1,0 +1,9 @@
+Both records passed authentication and were accepted.
+Record sequences: 0 1
+Record 0, ciphertext block 1: 61d33f80eaa30588caac0b65e6ae5b1f
+Record 1, ciphertext block 0: 62d03c83e9a0068bc9af0866e5ad581c
+Ciphertext blocks XOR:       03030303030303030303030303030303
+Plaintext blocks XOR:        03030303030303030303030303030303
+MATCH: the two blocks reused the same CTR keystream.
+Recovered second plaintext: b'BBBBBBBBBBBBBBBB'
+Recovery succeeded using ciphertexts and the known first block.
