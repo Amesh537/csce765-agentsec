@@ -1,0 +1,11 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /home/ubuntu/csce765-agentsec/hw2/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/ubuntu/csce765-agentsec/hw2
+collecting ... collected 3 items
+
+tests/test_handshake.py::test_valid_handshake PASSED                     [ 33%]
+tests/test_handshake.py::test_fresh_sessions PASSED                      [ 66%]
+tests/test_handshake.py::test_transcript_encoding PASSED                 [100%]
+
+============================== 3 passed in 0.76s ===============================

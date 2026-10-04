@@ -44,3 +44,29 @@ To leave the virtual environment:
 ```bash
 deactivate
 ```
+
+## Run the tests
+
+From `hw2/`, with the virtual environment active:
+
+```bash
+python -m pytest -v tests/
+```
+
+To run only the valid-handshake test:
+
+```bash
+python -m pytest -v tests/test_handshake.py::test_valid_handshake
+```
+
+To run only the fresh-session test:
+
+```bash
+python -m pytest -v tests/test_handshake.py::test_fresh_sessions
+```
+
+To run only the transcript-encoding test:
+
+```bash
+python -m pytest -v tests/test_handshake.py::test_transcript_encoding
+```
